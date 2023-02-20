@@ -60,7 +60,7 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 script = ExtResource( 3 )
 
 [node name="Player" parent="TileMap" instance=ExtResource( 2 )]
-position = Vector2( 952, 888 )
+position = Vector2( 328, 248 )
 
 [node name="ConcreedWall1" type="Node2D" parent="TileMap"]
 
@@ -85,3 +85,4 @@ position = Vector2( 992, 576 )
 position = Vector2( 1056, 576 )
 
 [connection signal="tilemap_size" from="TileMap" to="TileMap/Player" method="handle_map_size"]
+[connection signal="fire" from="TileMap/Player" to="TileMap" method="handle_fire"]
